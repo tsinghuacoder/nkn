@@ -502,7 +502,7 @@ func getBalanceByAddr(s Serverer, params map[string]interface{}, ctx context.Con
 	return respPacking(errcode.SUCCESS, ret)
 }
 
-// getBalanceByAssetID gets balance by address
+// GetBalanceByAssetID gets balance by address
 // params: {"address":<address>, "assetid":<assetid>}
 // return: {"resultOrData":<result>|<error data>, "error":<errcode>}
 func GetBalanceByAssetID(s Serverer, params map[string]interface{}, ctx context.Context) map[string]interface{} {

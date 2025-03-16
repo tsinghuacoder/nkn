@@ -222,7 +222,7 @@ func (localNode *LocalNode) getBlocksMessageHandler(remoteMessage *node.RemoteMe
 	return replyBuf, false, err
 }
 
-// GetBlockHeaders requests a range of consecutive block headers from a neighbor
+// GetNeighborBlockHeaders requests a range of consecutive block headers from a neighbor
 // using GET_BLOCK_HEADERS message
 func (localNode *LocalNode) GetNeighborBlockHeaders(remoteNode *node.RemoteNode, startHeight, endHeight uint32) ([]*block.Header, error) {
 	if startHeight > endHeight {
